@@ -7,7 +7,7 @@ html {
     
       
     margin: 0;
-    background: linear-gradient(to bsottom, rgb(27, 19, 54), rgb(26, 4, 97), rgb(42, 24, 42), rgb(255, 20, 255), rgb(255, 20, 255));
+    background: linear-gradient(to bottom, rgb(27, 19, 54), rgb(26, 4, 97), rgb(42, 24, 42), rgb(255, 20, 255), rgb(255, 20, 255));
     padding-top: 60px; 
   }
   .menu {
@@ -61,6 +61,7 @@ html {
     
 }
 
+/* Animation continue que tu avais */
 @keyframes ani {
     0%, 100% {
         top: 0;
@@ -141,12 +142,14 @@ html {
     border-radius: 20px;
     background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%); 
     padding: 10px;
+    margin-left: 60px;
   }
   
   .left img {
     width: 100%;
     height: auto;
     display: block;
+    
     border-radius: 20px;
     transition: transform 0.6s ease, box-shadow 0.6s ease, filter 0.6s ease;
   }
@@ -162,17 +165,59 @@ html {
   .all {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 50px;
     padding: 50px;
-  }
-  .right{
-    width: 590px;
-    height: 80px;
+}
+  .right {
+    position: relative;
    
-  }
-  .right p{
-   text-align: start;
-   font-size: 25px;
-   margin-top: -60px;
-  }
+    padding: 20px;
+   
+    overflow: hidden;
+    height: 500px;
+   
+}
+
+.right p {
+    font-size: 18px;
+    width: 500px;
+    margin-top: 150px;
+    color: white;
+    position: relative;
+    text-align: start;
+    line-height: 35px;
+    z-index: 2;
+}
+
+.right img {
+    width: 100px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.5;
+    animation: moveInCircle 5s linear infinite;
+}
+
+  
+/* Animation circulaire */
+@keyframes moveInCircle {
+    0% {
+        transform: translate(-50%, -50%) translateX(200px) translateY(0px);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(400px);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(-100px) translateY(0px);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-100px);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(200px) translateY(0px);
+    }
+}
+
