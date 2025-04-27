@@ -9,16 +9,19 @@
 <body>
  
 
-  <input type="radio" name="slide" id="slide1-btn">
-  <input type="radio" name="slide" id="slide2-btn">
-  <input type="radio" name="slide" id="slide3-btn">
-
-
-  <div class="menu">
-    <label for="slide1-btn" onclick="document.getElementById('slide1').scrollIntoView({behavior:'smooth'})">Home</label>
-    <label for="slide2-btn" onclick="document.getElementById('slide2').scrollIntoView({behavior:'smooth'})">About me</label>
-    <label for="slide3-btn" onclick="document.getElementById('slide3').scrollIntoView({behavior:'smooth'})">Projects</label>
-  </div>
+    <input type="radio" name="slide" id="slide1-btn">
+    <input type="radio" name="slide" id="slide2-btn">
+    <input type="radio" name="slide" id="slide3-btn">
+    <input type="radio" name="slide" id="slide4-btn">
+    
+    <div class="menu">
+        <div class="first"><label for="slide1-btn" onclick="document.getElementById('slide1').scrollIntoView({behavior:'smooth'})">Home</label>
+            <label for="slide2-btn" onclick="document.getElementById('slide2').scrollIntoView({behavior:'smooth'})">About me</label>
+            <label for="slide3-btn" onclick="document.getElementById('slide3').scrollIntoView({behavior:'smooth'})">Projects</label></div>
+        <div class="second"><label for="slide4-btn" class="special" onclick="document.getElementById('slide4').scrollIntoView({behavior:'smooth'})">Contact me</label></div>
+      
+    </div>
+    
 
   <div id="slide1" class="slide">
     <div class="me">
@@ -27,6 +30,10 @@
       </div>
       <h1>Hi, I'm  <span id="test"></span></h1>
       <p>Software Engineer | Embedded Systems | Web Developer | Low-Level Programmer</p>
+      <div class="defilement">
+        <span>Voici un groupe de mots qui défile sans JavaScript ! 🚀</span>
+      </div>
+    
     </div>
   </div>
 
@@ -37,6 +44,12 @@
   <div id="slide3" class="slide">
     <h1>Voici la Diapo 3</h1>
   </div>
+
+  <div id="slide4" class="slide">
+    <h1>Voici la Diapo 4</h1>
+  </div>
+
+
 
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script>
