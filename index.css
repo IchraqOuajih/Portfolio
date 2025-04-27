@@ -4,6 +4,8 @@ html {
   body {
     font-family: Arial, sans-serif;
     text-align: center;
+    
+      
     margin: 0;
     background: linear-gradient(to bottom, rgb(27, 19, 54), rgb(26, 4, 97), rgb(42, 24, 42), rgb(255, 20, 255), rgb(255, 20, 255));
     padding-top: 60px; 
@@ -81,11 +83,41 @@ html {
     border-width: 3.5px;
     border-image-source: linear-gradient(to left,rgb(215, 67, 171), orange, yellow, green, blue, indigo, violet);
     font-weight: bold;
-    border-radius: 10px;
+    
     cursor: pointer;
     transition: 0.3s;
   }
   .menu label.special:hover{
     color: magenta;
-    background-color: rgb(112, 8, 215);
+    background-color: rgb(43, 6, 45)
+  }
+  .defil img{
+    width: 55px;
+  }
+
+
+  .defil {
+
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background: black;
+  }
+
+  .defil span {
+    width: 40px;
+    display: inline-block;
+    color: white;
+    padding-left: 100%;
+    animation: defilement 15s linear infinite;
+  }
+
+  @keyframes defilement {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
