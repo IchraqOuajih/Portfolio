@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ 
+
+  <input type="radio" name="slide" id="slide1-btn">
+  <input type="radio" name="slide" id="slide2-btn">
+  <input type="radio" name="slide" id="slide3-btn">
+
+
+  <div class="menu">
+    <label for="slide1-btn" onclick="document.getElementById('slide1').scrollIntoView({behavior:'smooth'})">Home</label>
+    <label for="slide2-btn" onclick="document.getElementById('slide2').scrollIntoView({behavior:'smooth'})">About me</label>
+    <label for="slide3-btn" onclick="document.getElementById('slide3').scrollIntoView({behavior:'smooth'})">Projects</label>
+  </div>
+
+  <div id="slide1" class="slide">
+    <div class="me">
+      <div class="prfl">
+        <img src="one.jpg" alt="Profile picture">
+      </div>
+      <h1>Hi, I'm  <span id="test"></span></h1>
+      <p>Software Engineer | Embedded Systems | Web Developer | Low-Level Programmer</p>
+    </div>
+  </div>
+
+  <div id="slide2" class="slide">
+    <h1>Voici la Diapo 2</h1>
+  </div>
+
+  <div id="slide3" class="slide">
+    <h1>Voici la Diapo 3</h1>
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#test', {
+      strings: ["Ichraq", "A Software egineer", "Creative"],
+      loop: true,
+      startdelay: 100,
+      backSpeed: 100,
+      typeSpeed: 50,
+    });
+  </script>
+
+</body>
+</html>

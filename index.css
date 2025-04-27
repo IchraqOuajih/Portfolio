@@ -1,0 +1,66 @@
+html {
+    scroll-behavior: smooth; 
+  }
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(to bottom, rgb(27, 19, 54), rgb(26, 4, 97), rgb(42, 24, 42), rgb(255, 20, 255), rgb(255, 20, 255));
+    padding-top: 60px; 
+  .menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(215, 187, 255);
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .menu label {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: #7236ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: inline-block;
+  }
+  .slide {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 2em;
+    border-bottom: 2px solid #ccc;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  .prfl img{
+    width: 120px;
+    border-radius: 50%;
+    position: relative;
+    height: 130px;
+    animation: ani 3s linear infinite;
+  }
+  @keyframes ani{
+    50%{
+        
+        right: 10px;
+        top: 15px;
+        
+    }
+  }
+  #test
+  {
+    color: rgb(255, 127, 255);
+
+  }
+  .slide h1{
+    color: white;
+  }
+  .slide p{
+    color: rgb(239, 184, 227);
+  }
