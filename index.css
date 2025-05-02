@@ -7,7 +7,7 @@ html {
     
       
     margin: 0;
-    background: linear-gradient(to bottom, rgb(27, 19, 54), rgb(26, 4, 97), rgb(42, 24, 42), rgb(255, 20, 255), rgb(255, 20, 255));
+    background: linear-gradient(to bottom, rgb(0, 0, 0), black, rgb(42, 24, 42), rgb(255, 20, 255), rgb(255, 20, 255));
     padding-top: 60px; 
   }
   .menu {
@@ -49,15 +49,14 @@ html {
     display: none;
   }
   .prfl img {
-    width: 120px;
-    height: 130px;
-    border-radius: 50%;
+    width: 395px;
+    height: 515px;
+    margin-left: 140px;
     position: relative;
     transition: transform 0.1s ease, box-shadow 0.4s ease, filter 0.3s ease; 
     animation: ani 3s linear infinite;
     transform: scale(1.1); 
-    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.5),
-                0 10px 20px rgba(102, 166, 255, 0.7);
+    filter: brightness(1.5) saturate(1.0) drop-shadow(0 0 2px black); 
     
 }
 
@@ -75,11 +74,14 @@ html {
 
 .prfl img:hover {
     transform: scale(1.1); 
-    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.5),
-                0 10px 20px rgba(102, 166, 255, 0.7);
-    filter: brightness(1.3) saturate(1.4) drop-shadow(0 0 2px #ff00d4); 
+   
+   
 }
 
+.try p{
+  font-size: 30px;
+  margin-left: 40px;
+}
   #test
   {
     color: rgb(255, 127, 255);
@@ -111,27 +113,49 @@ html {
     width: 55px;
   }
 
-
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .try {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
   .defil {
-
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
+   border-radius: 40px;
+    padding: 5px 0;
+    position: relative;
     
   }
-
-  .defil span {
-    width: 40px;
+  
+  .defil-inner {
     display: inline-block;
-    color: white;
-    padding-left: 100%;
     animation: defilement 15s linear infinite;
   }
-
+  
+  .defil span {
+    display: inline-block;
+    color: white;
+  }
+  
+  .defil img {
+    width: 30px;
+    vertical-align: middle;
+  }
+  
   @keyframes defilement {
     0% {
-      transform: translateX(0);
+      transform: translateX(100%);
     }
     100% {
       transform: translateX(-100%);
@@ -231,7 +255,9 @@ html {
     text-align: center;
     margin-bottom: 50px;
   }
-  
+  .up h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
   .down {
     display: flex;
     justify-content: center;
@@ -240,7 +266,7 @@ html {
     flex-wrap: wrap; 
   }
   .down > div {
-    width: 330px;
+    width: 332px;
     height: 250px;
     background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
     border-radius: 15px;
@@ -252,8 +278,8 @@ html {
   
   .down > div:hover {
     transform: scale(1.05) rotate(2deg);
-    background: linear-gradient(135deg, #6e00ff, #00ffd0);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.6), 0 0 20px rgba(110,0,255,0.7);
+    background: linear-gradient(135deg, #6e00ff, hsl(169, 100%, 50%));
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6), 0 0 20px rgba(6, 218, 255, 0.7);
   }
   
 
@@ -270,7 +296,6 @@ html {
     z-index: 1;
   }
   
-  /* Animation de la lumière */
   @keyframes moveLight {
     0% {
       transform: translate(0,0) rotate(0deg);
@@ -282,3 +307,25 @@ html {
       transform: translate(0,0) rotate(360deg);
     }
   }
+  .one img{
+    height: 100%;
+    width: 100%;
+  }
+  .one p{
+    color: white;
+    font-size: 40px;
+  }
+  .two img{
+    height: 100%;
+    width: 100%;
+  }
+  .three img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .fr img{
+    height: 100%;
+    width: 100%;
+  }
+ 
