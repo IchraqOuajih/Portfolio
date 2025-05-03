@@ -43,7 +43,7 @@ html {
     align-items: center;
     
     font-size: 2em;
-    border-bottom: 2px solid #ccc;
+    
   }
   input[type="radio"] {
     display: none;
@@ -256,6 +256,7 @@ html {
     margin-bottom: 50px;
   }
   .up h1{
+    font-size: 45px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   .down {
@@ -265,10 +266,13 @@ html {
     gap: 30px; 
     flex-wrap: wrap; 
   }
+  
   .down > div {
     width: 332px;
-    height: 250px;
-    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+    color: white;
+    font-size: 27px;
+    height: 310px;
+    background: linear-gradient(135deg, #ffa4ea, #2c2c2c);
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     position: relative;
@@ -278,7 +282,7 @@ html {
   
   .down > div:hover {
     transform: scale(1.05) rotate(2deg);
-    background: linear-gradient(135deg, #6e00ff, hsl(169, 100%, 50%));
+    background: linear-gradient(135deg, #f9338c, hsl(169, 100%, 50%));
     box-shadow: 0 15px 30px rgba(0,0,0,0.6), 0 0 20px rgba(6, 218, 255, 0.7);
   }
   
@@ -328,4 +332,16 @@ html {
     height: 100%;
     width: 100%;
   }
- 
+
+.teht{
+  display: flex;
+}
+.teht p{
+  font-size: 35px;
+}
+.tali h1{
+  color: #3b0274;
+  font-size: 30px;
+}
+
+
